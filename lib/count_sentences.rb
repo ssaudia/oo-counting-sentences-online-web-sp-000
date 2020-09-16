@@ -32,4 +32,4 @@ def sentence?
    array = self.split(/[\.!?] /)
    array.length
  end
-end 
+end
