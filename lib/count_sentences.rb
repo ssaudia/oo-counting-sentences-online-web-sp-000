@@ -1,20 +1,33 @@
-require 'pry'
+def sentence?
 
-class String
+   if self.end_with?(".")
+     true
+   else
+     false
+   end
+ end
 
-  def sentence?
-    
-  end
+ def question?
 
-  def question?
+   if self.end_with?("?")
+     true
+   else
+     false
+   end
+ end
 
-  end
+ def exclamation?
 
-  def exclamation?
+   if self.end_with?("!")
+     true
+   else
+     false
+   end
+ end
 
-  end
+ def count_sentences
 
-  def count_sentences
-
-  end
-end
+   array = self.split(/[\.!?] /)
+   array.length
+ end
+end 
